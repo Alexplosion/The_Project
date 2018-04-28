@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users, :paths => 'users'
+
+  
     
   resources :users do
     resources :playlists, :places 
@@ -10,12 +12,13 @@ Rails.application.routes.draw do
   end
 
   resources :categories do
-    resources :playlists, :places
+    resources  :playlists, :places
   end
 
   resources :playlists, :places do
     resources :links
   end
 
+  root "themes#index"
 end
 

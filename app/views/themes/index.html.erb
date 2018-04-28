@@ -1,0 +1,7 @@
+<% @themes.each do |them| %>
+<%= them.name %>
+<%= them.description  %>
+<%= link_to  "categories", theme_path(them) %>
+<br>
+
+<%end%>
