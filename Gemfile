@@ -13,6 +13,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'link_thumbnailer'
+ gem 'bootstrap', '~> 4.0.0'
 
 
 group :development, :test do
@@ -34,6 +35,7 @@ group :development do
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
+  gem 'annotate'
 end
 
 group :test do
