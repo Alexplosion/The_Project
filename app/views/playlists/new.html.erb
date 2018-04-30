@@ -1,0 +1,17 @@
+<h1>New Playlist</h1>
+
+<%= form_for @playlist do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :theme_id %><br />
+    <%= f.collection_select :theme_id, Theme.order(:name), :id, :name, include_blank: true %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id, "State or Province" %><br />
+    <%= f.grouped_collection_select :category_id, Theme.order(:name), :categories, :name, :id, :name, include_blank: true %>
+  </div>
+  <div class="actions"><%= f.submit %></div>
+<% end %>

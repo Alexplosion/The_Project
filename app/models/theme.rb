@@ -11,8 +11,8 @@
 
 class Theme < ApplicationRecord
     has_many :categories
-    has_many :places, through: :categories
-    has_many :playlists, through: :categories
+    has_many :places
+    has_many :playlists
     accepts_nested_attributes_for :categories, allow_destroy: true
 
 end
