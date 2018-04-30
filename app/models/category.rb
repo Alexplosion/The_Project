@@ -15,4 +15,5 @@ class Category < ApplicationRecord
   has_many :playlists
   has_many :places 
   has_many :links, through: :playlists
+  accepts_nested_attributes_for :playlists, :places, allow_destroy: true
 end

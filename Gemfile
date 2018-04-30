@@ -13,7 +13,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'link_thumbnailer'
- gem 'bootstrap', '~> 4.0.0'
+gem 'bootstrap', '~> 4.0.0'
+gem 'nested_form_fields'
+  gem 'formtastic', '~> 3.0'
+
+
 
 
 group :development, :test do

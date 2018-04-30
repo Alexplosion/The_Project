@@ -101,6 +101,8 @@ GEM
       factory_bot (~> 4.8.2)
       railties (>= 3.0.0)
     ffi (1.9.23)
+    formtastic (3.1.5)
+      actionpack (>= 3.2.13)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     i18n (1.0.1)
@@ -144,6 +146,10 @@ GEM
     mini_portile2 (2.3.0)
     minitest (5.11.3)
     multi_json (1.13.1)
+    nested_form_fields (0.8.2)
+      coffee-rails (>= 3.2.1)
+      jquery-rails
+      rails (>= 3.2.0)
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
     net_http_timeout_errors (0.3.0)
@@ -298,11 +304,13 @@ DEPENDENCIES
   database_cleaner
   devise
   factory_bot_rails
+  formtastic (~> 3.0)
   jbuilder
   jquery-rails
   letter_opener
   link_thumbnailer
   listen
+  nested_form_fields
   pg (= 0.20.0)
   poltergeist
   pry-byebug
