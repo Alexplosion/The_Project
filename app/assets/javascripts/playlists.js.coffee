@@ -1,8 +1,4 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
-
-jQuery ->
+$(document).on 'turbolinks:load', ->
   $('#playlist_category_id').parent().hide()
   categories = $('#playlist_category_id').html()
   $('#playlist_theme_id').change ->
@@ -15,3 +11,4 @@ jQuery ->
     else
       $('#playlist_category_id').empty()
       $('#playlist_category_id').parent().hide()
+      return

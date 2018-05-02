@@ -22,6 +22,7 @@ class LinksController < ApplicationController
         @link.favicon = object.favicon
         @link.description = object.description
         @link.image = object.images.first.src.to_s
+       
         if object.videos != nil
             @link.videos = nil
         end
